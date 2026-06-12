@@ -21,7 +21,7 @@ This repository is built as a practical learning path around those questions. Th
 
 The console workshops are meant to be read while they run. Start the slave, start the matching master, watch both consoles, change one detail, and run the pair again. The full applications are richer tools for the moment when a real device, simulator or customer setup needs to be inspected manually.
 
-## What You Will Find Here
+## 🧭 What You Will Find Here
 
 | Area | What it teaches | Typical use |
 |------|-----------------|-------------|
@@ -31,7 +31,7 @@ The console workshops are meant to be read while they run. Start the slave, star
 | **Full Applications** | Swing master and slave applications. | Manual checks, troubleshooting, byte order validation, certificate review and field validation. |
 | **PLCcom.Console** | Shared Swing console window used by the console workshops. | Keeps workshop output readable without duplicating console code in every project. |
 
-## Repository Layout
+## 🗂️ Repository Layout
 
 ~~~text
 PLCcom.Console/
@@ -52,7 +52,7 @@ PLCcom.Console/
 
 Each chapter contains its own README. Each numbered project also contains a README with run order, expected output and the important points to inspect in the source code.
 
-## Recommended Learning Path
+## 🚦 Recommended Learning Path
 
 | Step | Start here | Why |
 |------|------------|-----|
@@ -64,7 +64,7 @@ Each chapter contains its own README. Each numbered project also contains a READ
 | 6 | `31_CANopen_Master` | Read and write CANopen-style object entries through Modbus. |
 | 7 | `91_Full_Master_Sample` and `92_Full_Slave_Sample` | Move from teaching code to full manual validation tools. |
 
-## Maven Package
+## 📦 Maven Package
 
 The examples use the PLCcom Modbus Java package from Maven Central:
 
@@ -78,7 +78,7 @@ The examples use the PLCcom Modbus Java package from Maven Central:
 
 The concrete version used by this repository is configured once in the root `pom.xml` as `plccom.modbus.version`. If you want to test another PLCcom Modbus release, change that property in one place and rebuild the reactor.
 
-## Requirements
+## 🧰 Requirements
 
 - Java 1.8 or newer runtime
 - Maven 3.8 or newer
@@ -88,7 +88,7 @@ The concrete version used by this repository is configured once in the root `pom
 
 The SDK itself is Java 1.8 compatible. Newer JDKs can be used to build and run the examples as long as the selected PLCcom Modbus package supports them.
 
-## Getting Started
+## 🚀 Getting Started
 
 Clone the repository and build all modules:
 
@@ -105,7 +105,7 @@ mvn -pl "1 First Steps/11_Simple_Master_TCP" -am exec:java -Dexec.mainClass=_11_
 
 You can also import the repository as existing Maven projects in Eclipse or another Java IDE and start the visible `main` classes directly.
 
-## Workshop Map
+## 🧪 Workshop Map
 
 | # | Workshop | Short description |
 |---|----------|-------------------|
@@ -119,7 +119,7 @@ You can also import the repository as existing Maven projects in Eclipse or anot
 | 91 | Full Master Sample | Complete Swing master application for manual validation. |
 | 92 | Full Slave Sample | Complete Swing slave application with TCP and SecureTCP listeners. |
 
-## Secure Modbus TCP and the PKI Store
+## 🔐 Secure Modbus TCP and the PKI Store
 
 SecureTCP uses TLS certificates. The examples create their PKI store locally when it is needed. The important folders are:
 
@@ -135,11 +135,11 @@ The generated PKI folders are ignored by Git on purpose. They are local runtime 
 
 Some workshops use permissive certificate validators intentionally. That makes the control flow easy to understand, but it is not a production security policy. Productive applications should validate certificate identity, validity, chain, intended role and deployment-specific trust rules.
 
-## Full Applications
+## 🖥️ Full Applications
 
 The full master and slave applications are practical manual validation tools. Use them when a small console example is too narrow: inspect logs, try TCP and SecureTCP, compare byte order and register modes, review certificate handling and check a real device or simulator interactively.
 
-## Licensing Information
+## 📄 Licensing Information
 
 **Examples License**
 
@@ -149,10 +149,10 @@ All example sources in this repository are released under the MIT License. You m
 
 The PLCcom Modbus library itself is proprietary software and is not part of the MIT license. To use the SDK in your own applications, you need a valid PLCcom Modbus license and must accept the applicable EULA.
 
-## Safety Notice
+## ⚠️ Safety Notice
 
 The examples are written for learning, integration tests and manual validation. Do not use them unchanged in production, safety-critical or industrial environments. Review addresses, write operations, timeouts, TLS settings, certificate trust and authorization logic before connecting to real equipment.
 
-## Trademark Information
+## ™️ Trademark Information
 
 All product names, company names and trademarks referenced in this repository are trademarks or registered trademarks of their respective owners. Their use is solely for identification and interoperability documentation.
