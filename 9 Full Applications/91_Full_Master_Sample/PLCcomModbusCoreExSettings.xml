@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>PLCcom Example Settings</comment>
+<entry key="serial">90396-63143-109248-2468263</entry>
+<entry key="Stopbits">One</entry>
+<entry key="RegisterMode">_16Bit</entry>
+<entry key="txtOperationTimeout">2000</entry>
+<entry key="txtIdleTime">3000</entry>
+<entry key="user">test</entry>
+<entry key="txtLocalPort">0</entry>
+<entry key="txtRemotePort">502</entry>
+<entry key="FlowControl">None</entry>
+<entry key="Parity">None</entry>
+<entry key="Baudrate">b9600</entry>
+<entry key="txtAddressIP">127.0.0.1</entry>
+<entry key="DataBits">DataBits8</entry>
+<entry key="TypeOfCommunication">TCP</entry>
+<entry key="chkCRCCheck">false</entry>
+</properties>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>PLCcom Example Settings</comment>
+<entry key="AND">0</entry>
+<entry key="SingleValues">0</entry>
+<entry key="Quantity">20</entry>
+<entry key="Target_Datatype">UINTEGER</entry>
+<entry key="Function">F03_Read_Holding_Registers</entry>
+<entry key="StartBit">0</entry>
+<entry key="ReadAddress">0</entry>
+<entry key="SlaveID">1</entry>
+<entry key="SingleValueBool">false</entry>
+<entry key="ByteOrder">AB_CD</entry>
+<entry key="MultipleValues"/>
+<entry key="WriteAddress">0</entry>
+<entry key="OR">0</entry>
+<entry key="isSingleValue">false</entry>
+</properties>

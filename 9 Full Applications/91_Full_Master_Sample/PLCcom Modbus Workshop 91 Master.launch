@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+	<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+		<listEntry value="/plccom-for-modbus-workshop-91-full-master-sample/src/main/java/example_app/Master_Example.java"/>
+	</listAttribute>
+	<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+		<listEntry value="1"/>
+	</listAttribute>
+	<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="example_app.Master_Example"/>
+	<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="plccom-for-modbus-workshop-91-full-master-sample"/>
+	<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:plccom-for-modbus-workshop-91-full-master-sample}"/>
+</launchConfiguration>

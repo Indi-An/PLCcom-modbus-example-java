@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>PLCcom Example Settings</comment>
+<entry key="SupportsFunction16">true</entry>
+<entry key="SupportsFunction15">true</entry>
+<entry key="LogLevel">Information</entry>
+<entry key="serial">74242-42171-106242-1867563</entry>
+<entry key="LogEnabled">true</entry>
+<entry key="Listener#Listener_1">Listener_1</entry>
+<entry key="SupportsFunction23">true</entry>
+<entry key="ByteOrder">AB_CD</entry>
+<entry key="SlaveID">1</entry>
+<entry key="AutoScroll">true</entry>
+<entry key="RegisterMode">_16Bit</entry>
+<entry key="SupportsFunction08">true</entry>
+<entry key="LocalPort@Listener_1">502</entry>
+<entry key="SupportsFunction06">true</entry>
+<entry key="SupportsFunction05">true</entry>
+<entry key="SupportsFunction04">true</entry>
+<entry key="SupportsFunction03">true</entry>
+<entry key="SupportsFunction02">true</entry>
+<entry key="SupportsFunction01">true</entry>
+<entry key="TypeOfCommunication@Listener_1">RTU_over_TCP</entry>
+<entry key="user">abc</entry>
+</properties>

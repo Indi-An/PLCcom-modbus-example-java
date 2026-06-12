@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.indi-an.plccom.examples</groupId>
+    <artifactId>plccom-modbus-example-java</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>PLCcom Modbus Java Examples</name>
+    <description>Java workshop projects for PLCcom Modbus master, slave, SecureTCP and CANopen examples.</description>
+    <url>https://github.com/Indi-An/PLCcom-modbus-example-java</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Indi.An GmbH</name>
+        <url>https://www.indi-an.com</url>
+    </organization>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <plccom.modbus.version>9.1.5</plccom.modbus.version>
+        <plccom.console.version>1.0.0</plccom.console.version>
+        <slf4j.version>1.7.36</slf4j.version>
+    </properties>
+
+    <modules>
+        <module>PLCcom.Console</module>
+        <module>1 First Steps/11_Simple_Master_TCP</module>
+        <module>1 First Steps/12_Simple_Slave_TCP</module>
+        <module>2 Secure Modbus TCP/21_SecureTCP_Master</module>
+        <module>2 Secure Modbus TCP/22_SecureTCP_Slave</module>
+        <module>2 Secure Modbus TCP/23_MutualTLS_Loopback</module>
+        <module>2 Secure Modbus TCP/24_RoleBasedAuthorization</module>
+        <module>3 CANopen/31_CANopen_Master</module>
+        <module>9 Full Applications/91_Full_Master_Sample</module>
+        <module>9 Full Applications/92_Full_Slave_Sample</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.indi-an.plccom</groupId>
+                <artifactId>plccom-for-modbus</artifactId>
+                <version>${plccom.modbus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.indi-an.plccom</groupId>
+                <artifactId>plccom-console</artifactId>
+                <version>${plccom.console.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-nop</artifactId>
+                <version>${slf4j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <compilerArgs>
+                            <arg>-Xlint:-options</arg>
+                        </compilerArgs>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.4.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>3.5.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

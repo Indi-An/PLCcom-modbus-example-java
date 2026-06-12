@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>PLCcom Example Settings</comment>
+<entry key="Request_001#Function">F01_Read_Coils</entry>
+<entry key="Request_003#Target_Datatype">BOOLEAN</entry>
+<entry key="Request_001#Quantity">8</entry>
+<entry key="Request_002#SlaveID">1</entry>
+<entry key="Request_003#ReadAddress">14</entry>
+<entry key="Request_001#ByteOrder">AB_CD</entry>
+<entry key="Request#Request_003">Request_003</entry>
+<entry key="Request_002#StartBit">0</entry>
+<entry key="Request#Request_002">Request_002</entry>
+<entry key="Request#Request_001">Request_001</entry>
+<entry key="Request_002#ByteOrder">AB_CD</entry>
+<entry key="Request_002#Function">F03_Read_Holding_Registers</entry>
+<entry key="Request_002#Quantity">20</entry>
+<entry key="Request_003#ByteOrder">AB_CD</entry>
+<entry key="Request_003#SlaveID">1</entry>
+<entry key="Request_001#SlaveID">1</entry>
+<entry key="Request_003#StartBit">0</entry>
+<entry key="Request_001#Target_Datatype">BOOLEAN</entry>
+<entry key="Request_001#ReadAddress">0</entry>
+<entry key="Request_003#Function">F03_Read_Holding_Registers</entry>
+<entry key="Request_003#Quantity">2</entry>
+<entry key="Request_002#Target_Datatype">BOOLEAN</entry>
+<entry key="Request_001#StartBit">0</entry>
+<entry key="Request_002#ReadAddress">10</entry>
+</properties>
