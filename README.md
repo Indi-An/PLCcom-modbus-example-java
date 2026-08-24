@@ -82,11 +82,22 @@ The concrete version used by this repository is configured once in the root `pom
 
 - Java 1.8 or newer runtime
 - Maven 3.8 or newer
-- A valid PLCcom Modbus license user name and serial number
+- A PLCcom Modbus license user name and serial number — or no license at all, see below
 - A Modbus device, simulator or one of the included slave workshops
 - A desktop environment for the shared Swing console and the full applications
 
 The SDK itself is Java 1.8 compatible. Newer JDKs can be used to build and run the examples as long as the selected PLCcom Modbus package supports them.
+
+### Trying the examples without a license
+
+You can start right away: if you leave the license user name and serial empty, PLCcom for
+Modbus runs for 15 minutes during a debug session with the full feature set — enough to
+open a connection and read values, so you can try the library before you register.
+
+For uninterrupted work, generate a free trial license (14 days). It is created immediately
+and is then available in your account:
+
+→ https://www.indi-an.com/en/plccom/modbus/modbus-download/
 
 ## 🚀 Getting Started
 

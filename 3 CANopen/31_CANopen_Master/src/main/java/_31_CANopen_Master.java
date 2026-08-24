@@ -46,6 +46,11 @@ import com.indian.plccom.modbus.Enums.eStopBits;
  * the whole flow is easy to follow.
  */
 public final class _31_CANopen_Master implements iConnectionStateChangeEvent {
+	// Important !!!!!!!!!!!!!!!!!!
+	// Enter your Username + Serial here! Please note: with blank fields the library runs
+	// for 15 minutes during a debug session. Both values can also come
+	// from configuration or an environment variable.
+	// Free trial license (14 days, uninterrupted): https://www.indi-an.com/en/plccom/modbus/modbus-download/
 	private static final String LICENSE_USER_NAME = "<Enter your UserName here>";
 	private static final String LICENSE_SERIAL = "<Enter your Serial here>";
 	private static final String COM_PORT = "COM3";

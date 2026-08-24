@@ -2249,6 +2249,11 @@ public class SlaveExample extends JFrame implements iConnectionStateChangeEvent,
 			lvLog.removeAll();
 
 			// create new modbus slave
+			// Important !!!!!!!!!!!!!!!!!!
+			// Enter your Username + Serial here! Please note: with blank fields the library runs
+			// for 15 minutes during a debug session. Both values can also come
+			// from configuration or an environment variable.
+			// Free trial license (14 days, uninterrupted): https://www.indi-an.com/en/plccom/modbus/modbus-download/
 			slave = new ModbusSlave(txtUser.getText(), txtSerial.getText(), (int) cmbSlaveID.getSelectedItem(),
 					(eRegisterMode) cmbRegisterMode.getSelectedItem(), (eByteOrder) cmbByteOrder.getSelectedItem());
 
