@@ -1,4 +1,4 @@
-﻿# Maven and Java build output
+# Maven and Java build output
 target/
 *.class
 *.jar
@@ -15,6 +15,10 @@ pki/
 *.bak
 
 # IDE workspace metadata that should stay local
+.project
+.classpath
+.settings/
+.metadata/
 .vs/
 .idea/
 *.iml
