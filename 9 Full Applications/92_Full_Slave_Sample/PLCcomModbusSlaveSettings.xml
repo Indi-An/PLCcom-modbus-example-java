@@ -5,7 +5,7 @@
 <entry key="SupportsFunction16">true</entry>
 <entry key="SupportsFunction15">true</entry>
 <entry key="LogLevel">Information</entry>
-<entry key="serial">74242-42171-106242-1867563</entry>
+<entry key="serial"></entry>
 <entry key="LogEnabled">true</entry>
 <entry key="Listener#Listener_1">Listener_1</entry>
 <entry key="SupportsFunction23">true</entry>
@@ -22,5 +22,5 @@
 <entry key="SupportsFunction02">true</entry>
 <entry key="SupportsFunction01">true</entry>
 <entry key="TypeOfCommunication@Listener_1">RTU_over_TCP</entry>
-<entry key="user">abc</entry>
+<entry key="user"></entry>
 </properties>

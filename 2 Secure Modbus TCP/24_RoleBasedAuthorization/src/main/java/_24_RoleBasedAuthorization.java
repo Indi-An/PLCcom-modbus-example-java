@@ -120,8 +120,8 @@ public final class _24_RoleBasedAuthorization {
 					"PLCcom Modbus Workshop 24 Maintenance Master", "maintenance", "SecureTCP slave");
 
 			// The certificate contains localhost as a subject alternative name.
-			// Setting the target host name makes the hostname check intention clear
-			// even though the socket connects to 127.0.0.1.
+			// The target host name is only a hint for a custom certificate validator;
+			// the built-in validator does not check host names.
 			masterOptions.setTargetHostName("localhost");
 
 			// Step 3: Start a small slave data model. Role-based authorization does
@@ -188,7 +188,7 @@ public final class _24_RoleBasedAuthorization {
 	private static SecureModbusTcpOptions createOptions(String pkiPath, String certificateAlias, String roleName,
 			String remoteName) throws Exception {
 		// The PKI folder contains own/certs, own/private, trusted/certs,
-		// issuers/certs, and rejected/certs. In this workshop it is intentionally
+		// issuer/certs, and rejected/certs. In this workshop it is intentionally
 		// local to the example so the generated certificate and key files remain
 		// easy to find and inspect.
 		SecureModbusPkiStore pkiStore = new SecureModbusPkiStore(pkiPath);

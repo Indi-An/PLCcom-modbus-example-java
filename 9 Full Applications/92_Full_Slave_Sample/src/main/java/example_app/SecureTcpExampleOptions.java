@@ -44,6 +44,8 @@ final class SecureTcpExampleOptions {
 				options.getRequireLocalCertificate()));
 		options.setRequireRemoteCertificate(getEnvironmentBool("PLCCOM_MODBUS_SECURETCP_REQUIRE_REMOTE_CERTIFICATE",
 				options.getRequireRemoteCertificate()));
+		// Host-name settings are only a hint for a custom certificate validator; the built-in
+		// validator does not check host names, trust is decided by the PKI folders.
 		options.setValidateRemoteCertificateHostName(getEnvironmentBool("PLCCOM_MODBUS_SECURETCP_VALIDATE_HOSTNAME",
 				options.getValidateRemoteCertificateHostName()));
 		options.setTargetHostName(getEnvironmentValue("PLCCOM_MODBUS_SECURETCP_TARGET_HOST",

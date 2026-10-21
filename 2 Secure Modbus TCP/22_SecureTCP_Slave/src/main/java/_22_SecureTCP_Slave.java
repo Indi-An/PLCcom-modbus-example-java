@@ -150,7 +150,7 @@ public final class _22_SecureTCP_Slave implements iConnectionStateChangeEvent, i
 		options.setTlsProtocolMode(SecureModbusTlsProtocolMode.Auto);
 
 		// PKI default behavior is the same as on the master side: own contains
-		// the local identity, trusted and issuers contain accepted client trust
+		// the local identity, trusted and issuer contain accepted client trust
 		// material, and rejected receives unknown or invalid remote certificates.
 		//
 		// Workshop-only override:
@@ -190,7 +190,7 @@ public final class _22_SecureTCP_Slave implements iConnectionStateChangeEvent, i
 		System.out.println("  own/certs      : " + pkiStore.getOwnCertificatesPath());
 		System.out.println("  own/private    : " + pkiStore.getOwnPrivatePath());
 		System.out.println("  trusted/certs  : " + pkiStore.getTrustedCertificatesPath());
-		System.out.println("  issuers/certs  : " + pkiStore.getIssuerCertificatesPath());
+		System.out.println("  issuer/certs   : " + pkiStore.getIssuerCertificatesPath());
 		System.out.println("  rejected/certs : " + pkiStore.getRejectedCertificatesPath());
 		System.out.println();
 	}

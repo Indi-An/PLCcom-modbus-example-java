@@ -60,7 +60,7 @@ final class CertificateManagerDialog extends JDialog {
 
 	private static final String STORE_OWN = "Own";
 	private static final String STORE_TRUSTED = "Trusted";
-	private static final String STORE_ISSUERS = "Issuers";
+	private static final String STORE_ISSUERS = "Issuer";
 	private static final String STORE_REJECTED = "Rejected";
 
 	private static final Color HEADER_BACKGROUND = new Color(245, 248, 252);
@@ -274,7 +274,7 @@ final class CertificateManagerDialog extends JDialog {
 					}
 				});
 		buttonIssuer = createFooterButton(text("CertificateManager_ButtonIssuer_Text", "Issuer"), createIssuerIcon(32),
-				text("CertificateManager_ButtonIssuer_ToolTip", "Move the selected certificate to issuers."),
+				text("CertificateManager_ButtonIssuer_ToolTip", "Move the selected certificate to issuer."),
 				new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent event) {
@@ -437,7 +437,7 @@ final class CertificateManagerDialog extends JDialog {
 		}
 
 		status.setText(MessageFormat.format(text("CertificateManager_StatusCounts_Text",
-				"Own: {0}    Trusted: {1}    Issuers: {2}    Rejected: {3}"), countStore(STORE_OWN),
+				"Own: {0}    Trusted: {1}    Issuer: {2}    Rejected: {3}"), countStore(STORE_OWN),
 				countStore(STORE_TRUSTED), countStore(STORE_ISSUERS), countStore(STORE_REJECTED)));
 		status.setForeground(countStore(STORE_REJECTED) > 0 ? Color.RED.darker() : new Color(30, 115, 45));
 		updateDetails();
@@ -764,7 +764,7 @@ final class CertificateManagerDialog extends JDialog {
 			return text("CertificateManager_StoreTrusted_Text", "Trusted");
 		}
 		if (STORE_ISSUERS.equals(storeName)) {
-			return text("CertificateManager_StoreIssuers_Text", "Issuers");
+			return text("CertificateManager_StoreIssuers_Text", "Issuer");
 		}
 		if (STORE_REJECTED.equals(storeName)) {
 			return text("CertificateManager_StoreRejected_Text", "Rejected");

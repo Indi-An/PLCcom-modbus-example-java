@@ -21,7 +21,7 @@ mvn -pl "2 Secure Modbus TCP/21_SecureTCP_Master" -am exec:java -Dexec.mainClass
 
 ## What To Inspect
 
-The SecureTCP options are the center of this example. They define the PKI path and the validator hook. When a custom validator is present, the PKI store is no longer the only trust decision. That is useful for teaching and for special integration policies, but production code should be deliberate and restrictive.
+The SecureTCP options are the center of this example. They define the PKI path and the validator hook. When a custom validator is present, the PKI store takes no part in the trust decision for the remote certificate; the validator decides alone. The store then only holds this endpoint's own certificate. That is useful for teaching and for special integration policies, but production code should be deliberate and restrictive.
 
 ## License
 

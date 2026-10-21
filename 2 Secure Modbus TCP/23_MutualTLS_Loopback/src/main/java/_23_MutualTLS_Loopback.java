@@ -109,9 +109,9 @@ public final class _23_MutualTLS_Loopback {
 					"PLCcom Modbus Workshop 23 Master", "SecureTCP slave");
 
 			// The generated certificates contain "localhost" as DNS name and
-			// 127.0.0.1 as IP address. Setting the target host name makes the
-			// example explicit and keeps the intent readable when the connector
-			// itself uses the numeric loopback address.
+			// 127.0.0.1 as IP address. The target host name is only a hint for a
+			// custom certificate validator; the built-in validator trusts a
+			// certificate only through the PKI folders and does not check host names.
 			masterOptions.setTargetHostName("localhost");
 
 			// Step 2: Create the in-process slave and preload two holding
@@ -186,7 +186,8 @@ public final class _23_MutualTLS_Loopback {
 
 		// The own certificate is created on demand and reused on the next start.
 		// The alias becomes the readable file name and subject common name. DNS
-		// and IP subject alternative names are important for TLS hostname checks.
+		// and IP subject alternative names describe the endpoint; the built-in
+		// validator does not check them.
 		SecureModbusOwnCertificate ownCertificate = new SecureModbusOwnCertificate(pkiStore, certificateAlias,
 				"workshop-password", 3650, "Indi.An GmbH", Arrays.asList("localhost"),
 				Arrays.asList(InetAddress.getByName("127.0.0.1")));
@@ -198,7 +199,7 @@ public final class _23_MutualTLS_Loopback {
 		options.setOwnCertificate(ownCertificate);
 
 		// In a production mutual-TLS setup, each side would trust the other side
-		// through trusted/certs or issuers/certs. This workshop intentionally uses
+		// through trusted/certs or issuer/certs. This workshop intentionally uses
 		// a custom validator so users can see exactly where certificate decisions
 		// enter the flow. While this validator is assigned, the normal PKI trust
 		// decision is bypassed.

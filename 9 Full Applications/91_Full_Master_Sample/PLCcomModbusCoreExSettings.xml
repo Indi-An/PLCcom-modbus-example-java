@@ -2,12 +2,12 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>PLCcom Example Settings</comment>
-<entry key="serial">90396-63143-109248-2468263</entry>
+<entry key="serial"></entry>
 <entry key="Stopbits">One</entry>
 <entry key="RegisterMode">_16Bit</entry>
 <entry key="txtOperationTimeout">2000</entry>
 <entry key="txtIdleTime">3000</entry>
-<entry key="user">test</entry>
+<entry key="user"></entry>
 <entry key="txtLocalPort">0</entry>
 <entry key="txtRemotePort">502</entry>
 <entry key="FlowControl">None</entry>

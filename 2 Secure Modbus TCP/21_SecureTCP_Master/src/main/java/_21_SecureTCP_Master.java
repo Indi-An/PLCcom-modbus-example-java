@@ -138,7 +138,7 @@ public final class _21_SecureTCP_Master {
 		// Default PKI behavior when no custom validator is configured:
 		// own/certs and own/private contain this master's local certificate and
 		// private key. trusted/certs contains remote certificates that are trusted
-		// directly. issuers/certs contains trusted issuing CA certificates. Unknown
+		// directly. issuer/certs contains trusted issuing CA certificates. Unknown
 		// or invalid remote certificates are written to rejected/certs and the
 		// connection fails so an operator can review them.
 		//
@@ -167,7 +167,7 @@ public final class _21_SecureTCP_Master {
 		System.out.println("  own/certs      : " + pkiStore.getOwnCertificatesPath());
 		System.out.println("  own/private    : " + pkiStore.getOwnPrivatePath());
 		System.out.println("  trusted/certs  : " + pkiStore.getTrustedCertificatesPath());
-		System.out.println("  issuers/certs  : " + pkiStore.getIssuerCertificatesPath());
+		System.out.println("  issuer/certs   : " + pkiStore.getIssuerCertificatesPath());
 		System.out.println("  rejected/certs : " + pkiStore.getRejectedCertificatesPath());
 		System.out.println();
 	}
