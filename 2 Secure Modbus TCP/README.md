@@ -2,6 +2,8 @@
 
 This chapter takes the same Modbus idea and puts a secure TLS transport underneath it. The goal is not to hide security behind one property. The goal is to make the certificate flow visible: where the local certificate lives, why a remote certificate may be rejected, how trust is established and where a project-specific validator can make the final decision.
 
+The PLCcom for Modbus library version used by these examples is defined once in the root `pom.xml` (property `plccom.modbus.version`).
+
 ## Workshops
 
 | # | Project | What it demonstrates |

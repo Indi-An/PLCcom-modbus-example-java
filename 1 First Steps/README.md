@@ -2,6 +2,8 @@
 
 This chapter is the clean starting point. One slave listens on normal Modbus TCP, one master connects to it, and the code shows the complete read/write path without TLS, PKI or UI complexity.
 
+The PLCcom for Modbus library version used by these examples is defined once in the root `pom.xml` (property `plccom.modbus.version`).
+
 ## Workshops
 
 | # | Project | What to look for |

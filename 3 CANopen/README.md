@@ -2,6 +2,8 @@
 
 This chapter demonstrates CANopen-style object access through Modbus communication. Some devices expose data through an index/subindex model while the physical transport is still Modbus. The example shows how that mental model can be mapped into readable application code.
 
+The PLCcom for Modbus library version used by these examples is defined once in the root `pom.xml` (property `plccom.modbus.version`).
+
 ## Workshops
 
 | # | Project | What it demonstrates |

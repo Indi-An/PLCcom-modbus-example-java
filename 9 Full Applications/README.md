@@ -2,6 +2,8 @@
 
 The full applications are richer manual validation tools. They are not the first place to learn the API, but they are very useful once a device, simulator or customer scenario needs to be inspected interactively.
 
+The PLCcom for Modbus library version used by these examples is defined once in the root `pom.xml` (property `plccom.modbus.version`).
+
 ## Applications
 
 | # | Project | What it is for |
