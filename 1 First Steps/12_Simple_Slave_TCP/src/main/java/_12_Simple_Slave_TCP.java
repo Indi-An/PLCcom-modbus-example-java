@@ -45,8 +45,8 @@ public final class _12_Simple_Slave_TCP implements iConnectionStateChangeEvent, 
 	// for 15 minutes during a debug session. Both values can also come
 	// from configuration or an environment variable.
 	// Free trial license (14 days, uninterrupted): https://www.indi-an.com/en/plccom/modbus/modbus-download/
-	private static final String LICENSE_USER_NAME = "<Enter your UserName here>";
-	private static final String LICENSE_SERIAL = "<Enter your Serial here>";
+	private static final String LICENSE_USER_NAME = "";
+	private static final String LICENSE_SERIAL = "";
 	private static final String LISTENER_ID = "workshop-tcp";
 	private static final int LISTEN_PORT = 502;
 	private static final int SLAVE_ID = 1;

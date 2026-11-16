@@ -150,7 +150,6 @@ public class Master_Example extends JFrame implements iConnectionStateChangeEven
 	 *            command-line arguments; currently ignored
 	 */
 	public static void main(String[] args) {
-		WorkshopLogging.configure();
 		EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {

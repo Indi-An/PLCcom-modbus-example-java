@@ -56,8 +56,8 @@ public final class _22_SecureTCP_Slave implements iConnectionStateChangeEvent, i
 	// for 15 minutes during a debug session. Both values can also come
 	// from configuration or an environment variable.
 	// Free trial license (14 days, uninterrupted): https://www.indi-an.com/en/plccom/modbus/modbus-download/
-	private static final String LICENSE_USER_NAME = "<Enter your UserName here>";
-	private static final String LICENSE_SERIAL = "<Enter your Serial here>";
+	private static final String LICENSE_USER_NAME = "";
+	private static final String LICENSE_SERIAL = "";
 	private static final String LISTENER_ID = "securetcp";
 	private static final int SECURE_TCP_PORT = SecureModbusTcpOptions.DEFAULT_SECURE_MODBUS_TCP_PORT;
 	private static final int SLAVE_ID = 1;

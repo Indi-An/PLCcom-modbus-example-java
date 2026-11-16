@@ -289,7 +289,6 @@ public class SlaveExample extends JFrame implements iConnectionStateChangeEvent,
 	 *            command-line arguments; currently ignored
 	 */
 	public static void main(String[] args) {
-		WorkshopLogging.configure();
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

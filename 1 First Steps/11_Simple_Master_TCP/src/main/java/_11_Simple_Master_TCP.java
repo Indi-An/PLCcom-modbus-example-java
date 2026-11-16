@@ -49,8 +49,8 @@ public final class _11_Simple_Master_TCP {
 	// for 15 minutes during a debug session. Both values can also come
 	// from configuration or an environment variable.
 	// Free trial license (14 days, uninterrupted): https://www.indi-an.com/en/plccom/modbus/modbus-download/
-	private static final String LICENSE_USER_NAME = "<Enter your UserName here>";
-	private static final String LICENSE_SERIAL = "<Enter your Serial here>";
+	private static final String LICENSE_USER_NAME = "";
+	private static final String LICENSE_SERIAL = "";
 	private static final String SLAVE_HOST = "127.0.0.1";
 	private static final int SLAVE_PORT = 502;
 	private static final int SLAVE_ID = 1;

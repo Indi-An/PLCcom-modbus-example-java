@@ -6,7 +6,7 @@
 
 **Hands-on Modbus examples for Java developers and integrators**
 
-[![Java](https://img.shields.io/badge/Java-1.8%2B-orange?style=flat-square&logo=openjdk)](https://www.java.com/)
+[![Java](https://img.shields.io/badge/Java-11%2B-orange?style=flat-square&logo=openjdk)](https://www.java.com/)
 [![Maven](https://img.shields.io/badge/Build-Maven-C71A36?style=flat-square&logo=apachemaven)](https://maven.apache.org/)
 [![Modbus](https://img.shields.io/badge/Protocol-Modbus%20TCP%20%7C%20SecureTCP-blue?style=flat-square)](#secure-modbus-tcp-and-the-pki-store)
 [![License](https://img.shields.io/badge/Examples-MIT-green?style=flat-square)](LICENSE)
@@ -72,7 +72,7 @@ The examples use the PLCcom Modbus Java package from Maven Central:
 <dependency>
     <groupId>com.indi-an.plccom</groupId>
     <artifactId>plccom-for-modbus</artifactId>
-    <version>9.x.x</version>
+    <version>10.x.x</version>
 </dependency>
 ~~~
 
@@ -80,13 +80,13 @@ The concrete version used by this repository is configured once in the root `pom
 
 ## 🧰 Requirements
 
-- Java 1.8 or newer runtime
+- Java 11 or newer runtime (Java 11 to 27)
 - Maven 3.8 or newer
 - A PLCcom Modbus license user name and serial number — or no license at all, see below
 - A Modbus device, simulator or one of the included slave workshops
 - A desktop environment for the shared Swing console and the full applications
 
-The SDK itself is Java 1.8 compatible. Newer JDKs can be used to build and run the examples as long as the selected PLCcom Modbus package supports them.
+PLCcom for Modbus 10 runs on Java 11 to 27. Newer JDKs can be used to build and run the examples as long as the selected PLCcom Modbus package supports them.
 
 ### Trying the examples without a license
 
